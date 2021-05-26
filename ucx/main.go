@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	router := routers.InitRouter()
 
+	router := routers.InitRouter()
 	s := &http.Server{
 		Addr:           ":8080",
 		Handler:        router,
